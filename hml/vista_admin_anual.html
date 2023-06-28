@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- ICONOS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- css -->
+    <link rel="stylesheet" href="/css/admin.css">
+
+
+    <title>Informe Anual</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <!-- menu barra lateral --> 
+        <aside>
+            <!-- logo parte superior -->
+            <header>
+                <h1 class="logo ">Abogados Lex</h1>
+                <br>
+                <h2>ADMIN
+                </h2>
+            </header>
+            <!-- menu de opciones -->
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button class="boton-categoria active"><i class="bi bi-book"></i>todos los documentos</button>
+                    </li>
+                    <li>
+                        <a href="login.html">    <button class="boton-categoria"><i class="bi bi-clipboard-plus"></i>inicio de usuario </button></a>
+                        <!-- <button class="boton-categoria"><i class="bi bi-clipboard-plus"></i>inicio de usuario </button> -->
+                    </li>
+                    <li>
+                      <button class="boton-categoria "><i class="bi bi-building"></i><a href="vista_admin_mensual.html" class="text-white" style="text-decoration: none;">lista mensual</a></button>
+                    </li>
+                    <li>
+                        <button class="boton-categoria"><i class="bi bi-cash"></i> Cotizacion</button>
+                    </li>
+                    <li>
+                        <a href="consultar_informacion.html"><button class="boton-categoria"><i class="bi bi-info-circle"></i> Consultar Información</button></a>
+                    </li>
+                    <li>
+                        <a href="generar_contratos.html"><button class="boton-categoria"><i class="bi bi-file-earmark-arrow-up"></i> Generar Contratos</button></a>
+                    </li>
+                    <li>
+                        <a href="diligencia_contratos.html"><button class="boton-categoria"><i class="bi bi-file-earmark-person"></i> Diligencias y Contratos de Causas asociadas</button></a>
+                    </li>
+                    <li>
+                        <a class ="boton-carrito" href="./carrito.html"><i class="bi bi-basket"></i><span class="numerito">0</span></a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- footer menu -->
+            <footer>
+              <p class="texto-footer">© 2022 Abogados lex </p>  
+            </footer>
+        </aside>
+        <main>
+           <!-- Vista Modo Administrador
+        Info - mensual y anual 
+     cliente normal o cliente Vip con convenio-->
+        
+     <section class="dividir_contenido">
+        <h2>Informe Anual - 2023</h2>
+        <br>
+      </section>
+  
+      <section class="container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col"> Meses </th>
+              <th scope="col"> Gananacias</th>
+              <th scope="col"> Gastos </th>
+              <th scope="col"> Total mes</th>
+              <th scope="col">Revisar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"> Enero</th>
+              <td> $ 590.500</td>
+              <td id="gastos">$ -90.500</td>
+              <td> $ 500.000</td>
+              <td style="text-align: center;"><a href="">Visualizar</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Febrero</th>
+              <td>$ 790.500</td>
+              <td id="gastos">$ -290.500</td>
+              <td> $ 500.000</td>
+              <td style="text-align: center;"><a href="">Visualizar</a></td>
+            </tr>
+            <tr>
+              <th scope="row"> Marzo</th>
+              <td>$ 890.500</td>
+              <td id="gastos">$ -255.950</td>
+              <td> $ 634.550</td>
+              <td style="text-align: center;"><a href="">Visualizar</a></td>
+            </tr>
+            <tr>
+              <th scope="row"> Abril</th>
+              <td>$ 1.090.500</td>
+              <td id="gastos">$ -390.500</td>
+              <td>$   700.000</td>
+              <td style="text-align: center;"><a href="">Visualizar</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Mayo</th>
+              <td>$ 2.590.500</td>
+              <td id="gastos">$ -1.890.500</td>
+              <td>$ 700.000</td>
+              <td style="text-align: center;"><a href="" >Visualizar</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Junio</th>
+              <td>$ 6.590.500</td>
+              <td id="gastos">$ -2.590.500</td>
+              <td> $ 4.000.000</td>
+              <td style="text-align: center;"><a href="">Visualizar</a></td>
+            </tr>
+
+            <tr>
+                <th scope="row">Total</th>
+                <td> $ 12.543.000</td>
+                <td id="gastos"> $ -5.508.450</td>
+                <td> $ 7.034.550 </td>
+                <td style="text-align: center;"><a href="">Ver Reporte Completo</a></td>
+              </tr>
+              
+              <!-- Generar reporte-->
+              <tr>
+                <th scope="row"> Ver Informe Mensual </th>
+                <td style="text-align: center;"><a href=""> Ver Informe de Ganacias </a> </td>
+                <td style="text-align: center;"><a href=""> Ver Informe de Gastos</a> </td>
+                <td style="text-align: center;"><a href=""> </a></td>
+                <td style="text-align: center;"><a href=""> Generar Informe Anual</a></td>
+              </tr>
+
+
+
+
+          </tbody>
+        </table>
+      </section>
+
+
+
+
+        </main>
+
+
+
+</body>
+</html>

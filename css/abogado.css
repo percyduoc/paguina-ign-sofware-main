@@ -1,0 +1,21 @@
+body{
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+    background-color: black;
+}
+
+footer{
+    width: 100%;
+    top: 675px;
+
+    background-color: rgba(0, 0, 0, 0.725);
+    height: 28%;
+    color: #f4b30e;
+}
+
+.dividir_contenido{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
